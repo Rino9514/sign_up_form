@@ -47,17 +47,29 @@ body{
 }
 
 .left_logo_text{
+    /* flex car il faut que les block enfants soient en direction rows */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    position: absolute;
+    /* ici la position absolue permet de pouvoir bouger le div ou on veut dans l'image à condition que le div dans lequel il se trouve soit en relative */
+    position: absolute; 
     top: 200px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
     padding: 10px 0;
 }
+
+.left_photo_credits{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
 .left_logo_text img{
     width: 150px;
 }
@@ -65,8 +77,11 @@ body{
 .left_logo_text p{
     font-family: "Norse";
     font-weight: bold;
-    font-size: 106px;
+    font-size: 108px;
 }
+
+
+
 .main_right_container {
     display: flex;
     flex-basis: 60%;
