@@ -26,19 +26,19 @@
     font-display: swap;
 }
 
+:root {
+    --default_color: #E5E7EB;
+    --focus_color: blue;
+    --invalid_color: red;
+}
+
 body{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    height: 100vh;
-    width: 100vh;
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family:  'Roboto', sans-serif;
 }
 
 .main_left_container {
     display: flex;
-    flex-basis: 40%;
     position: relative;
 }
 
@@ -84,7 +84,58 @@ body{
 
 .main_right_container {
     display: flex;
-    flex-basis: 60%;
+    flex-direction: column;
 }
 
+.right_top_text {
+    padding-left: 50px;
+    padding-top: 200px;
+    padding-bottom: 75px;
+    padding-right: 150px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.right_footer{
+    padding: 2rem 4rem;
+}
+
+
+.right_footer button{
+    background-color: #596D48;
+    color: white;
+    font-weight:600;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1rem 4rem;
+    border-radius: 7px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+    border: none;
+    margin-bottom: 3rem;
+}
+
+.right_footer > p{
+    font-size: 1.2rem;
+}
+/* il faut le placer en premier car sinon ça écrase le reste règle du LVAH, link->visited->active->hover */
+.right_footer a:link,
+.right_footer a:visited {
+  color: #596D48;          /* la couleur que tu veux */
+  text-decoration: none; /* optionnel */
+}
+
+.right_footer a{
+    color: #596D48;
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.right_footer a:active {
+  color: #2f3b25; 
+}
+
+
+.right_footer a:hover {
+  color: #4b5c3b; 
+}
 
