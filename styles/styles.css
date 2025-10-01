@@ -81,10 +81,10 @@ body{
 }
 
 
-
 .main_right_container {
     display: flex;
     flex-direction: column;
+    background-color: #eeee;
 }
 
 .right_top_text {
@@ -93,13 +93,58 @@ body{
     padding-bottom: 75px;
     padding-right: 150px;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 1.2rem 2rem 2rem;
+
+}
+
+.form_container{
+    display: flex;
+    gap: 5rem;
+    padding: 1.5rem 0rem 0rem;
+}
+
+.form_container > div{
+    display:flex;
+    flex-direction: column;
+}
+
+.form_container > div > input{
+    background-color: #FFFFFF;
+    border: 0.15rem solid #c6c9cc;
+    border-radius: 6px;
+    font-size: 1.3rem;
+}
+
+.form_container > div > label{
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+}
+
+input::placeholder {
+  color: rgba(128, 128, 128, 0.3);
+}
+
+.form_container > div > input:focus {
+    outline: none;
+    border: 0.15rem solid blue;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form_container > div > input[type="password"]:invalid {
+    outline: none;
+    border: 0.15rem solid red;
+}
 .right_footer{
     padding: 2rem 4rem;
 }
-
 
 .right_footer button{
     background-color: #596D48;
@@ -112,6 +157,18 @@ body{
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
     border: none;
     margin-bottom: 3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.right_footer button:hover{
+  background-color: #4b5c3b;
+}
+
+.right_footer button:active {
+  background-color: #3f4a33;
+  transform: translateY(1px);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .right_footer > p{

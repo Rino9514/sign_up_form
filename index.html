@@ -25,11 +25,41 @@
             <br>
             <p>You <em>know</em> you want to.</p>
         </div>
-        <form class="form">
-
+        <form id="new_account_form" class="form" action="https://httpbin.org/post" method="post">
+            <h2>Let's do this!</h2>
+            <div class="form_container">
+                <div>
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Bob" required>
+                </div>
+                <div>
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="McWalter" required>
+                </div>
+            </div>
+            <div class="form_container">
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="bob.walter@gmail.com" required>
+                </div>
+                <div>
+                    <label for="tel">PHONE NUMBER</label>
+                    <input type="tel" id="tel" name="tel" placeholder="0123456789" required>
+                </div>
+            </div>
+            <div class="form_container">
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+            </div>
         </form>
         <div class="right_footer">
-            <button>Create Account</button>
+            <button type="submit" form="new_account_form">Create Account</button>
             <p>Already have an account ? <a href="" target="_blank" rel="noopener noreferrer">Log in</a></p>
         </div>
     </div>
